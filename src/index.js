@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './index.css';
+import Navbar from './components/Navbar';
 import App from './App';
+import Home from './Pages/Home';
+import Order from './Pages/Order';
+import Accept from './Pages/Accept';
+import Reject from './Pages/Reject';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route index element={<Home />} />
+        <Route path='/verify' element={<Order />} />
+        <Route path='/faqs' element={<Accept />} />
+        <Route path='/transactions' element={<Reject />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
