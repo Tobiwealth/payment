@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Kdam+Thmor+Pro&family=Nuosu+SIL&family=Sora&display=swap");
+
+:root {
+  --font-base: 'DM Sans', serif;
+  --font-alt: 'Sora', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

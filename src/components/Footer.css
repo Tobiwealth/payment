@@ -1,0 +1,135 @@
+.footer__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+}
+.footer__logo-wrapper{
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	margin-top: 0;
+	transform: translateY(-2rem);
+	margin-left: 3rem;
+}
+.footer-logo{
+	margin-bottom: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+.footer-logo div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -6rem;
+}
+.copy{
+	margin-top: 30rem;
+	margin-bottom: -2rem;
+}
+.footer-image{
+	width: 90px;
+}
+.shift{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -1.5rem;
+	font-size: 1.8rem;
+}
+.paint{
+	color: #EC4848;
+}
+.footer-logo .paral{
+	padding-left: 2rem;
+	margin-left: -2rem;
+	margin-top: -1rem;
+}
+.footer__logo-wrapper .copy {
+	margin-top: auto;
+}
+.footer-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	text-align: left;
+}
+.footer-content div{
+	margin-right: 3rem 2rem;
+	padding: 2rem;
+}
+.footer-content div h3{
+	color: #EC4848;
+	margin-bottom: 2rem;
+	font-family: var(--font-alt);
+	font-size: 1.3rem;
+}
+.footer-content div p{
+	font-family: var(--font-base);
+	font-size: 1rem;
+	line-height: 2rem;
+}
+@media screen and (max-width: 1150px){
+	.footer__container{
+		padding: 0;
+	}
+	.footer__logo-wrapper{
+		margin-top: 3.3rem;
+	}
+	.copy{
+		margin: 0rem;
+		margin-bottom: 1.5rem;
+	}
+	.footer-content div h3{
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+	}
+	.footer-content div p{
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+}
+@media screen and (max-width: 650px){
+	.footer__container{
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 0;
+		padding-top: 1rem;
+	}
+	.footer-content{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0;
+		margin: 2rem 0;
+	}
+	.footer-content div{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.footer-content div h3{
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+	}
+	.footer-content div p{
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+	.footer__logo-wrapper{
+		transform: translateY(-5rem) scale(0.9);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.company{
+		
+	}
+	.contact{
+		transform: translateY(-2rem);
+	}
+	.footer-logo{
+		margin-bottom: 1rem;
+	}
+}
